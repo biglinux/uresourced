@@ -1,6 +1,6 @@
 # Maintainer: Mark Wagie <mark dot wagie at tutanota dot com>
 pkgname=uresourced
-pkgver=0.5.3
+pkgver=0.5.5
 pkgrel=1
 pkgdesc="Dynamically allocate resources to the active user"
 arch=('x86_64' 'aarch64' 'armv7h')
@@ -12,7 +12,7 @@ optdepends=('pipewire')
 backup=("etc/$pkgname.conf")
 install="$pkgname.install"
 source=("$url/-/archive/v$pkgver/$pkgname-v$pkgver.tar.gz")
-sha256sums=('a765c295e4fca2309178f56519c20b164b49bd2583c727fbf9d4e6f61b5212a5')
+sha256sums=('7751076ae11da2b3aa58e7a5ae5e2bbe1cca203ad17b4cfa16b39ee233e96365')
 
 build() {
   arch-meson "$pkgname-v$pkgver" build -Dappmanagement='true'
